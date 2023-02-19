@@ -779,6 +779,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 9px;
   }
   .header__menu {
+    white-space: nowrap;
     position: fixed;
     top: -100%;
     left: 0;
