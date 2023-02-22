@@ -999,6 +999,13 @@ padding: 20px 0px;
   justify-content: end;
   margin-right: 40px;
 }
+
+@media(max-width:556.99px) {
+  .cosmetology-section-arrows {
+    justify-content: left;
+  }
+}
+
 .cosmetology-section-arrows img {
   width: 40px;
   height: 30px;
@@ -1015,6 +1022,14 @@ padding: 20px 0px;
   background-color: #00868a;
   margin-bottom: 80px;
 }
+
+@media(max-width:556.99px) {
+  .lowertext {
+    background-color: #00868a;
+    margin-bottom: 40px;
+  }
+}
+
 .lowertext-list ul {
   display: flex;
   justify-content: space-between;
@@ -1171,6 +1186,7 @@ padding: 20px 0px;
 }
 
 .report-news {
+  height: 100%;
   padding: 30px 40px;
   background-color: #00868a;
 }
@@ -1243,9 +1259,19 @@ padding: 20px 0px;
   position: relative;
   bottom: 120px;
 }
+
 .cards-main {
+  cursor: pointer;
   background-color: #00868a;
+  transition: 0.3s ease;
 }
+
+.cards-main:hover {
+  -webkit-box-shadow: 0px 20px 46px 6px rgba(35, 133, 208, 0.55);
+-moz-box-shadow: 0px 20px 46px 6px rgba(35, 133, 208, 0.55);
+box-shadow: 0px 20px 46px 6px rgba(35, 133, 208, 0.55);
+}
+
 .cards-main-picture {
   position: relative;
 }
@@ -1269,11 +1295,24 @@ padding: 20px 0px;
   align-items: center;
 }
 .cards-main-content-text a {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
   color: #fff;
   margin-right: 15px;
 }
+
+@media(max-width:776.99px) {
+  .cards-main-content-text a {
+    font-size: 20px;
+  }
+}
+
+@media(max-width:556.99px) {
+  .cards-main-content-text a {
+    font-size: 24px;
+  }
+}
+
 .cards-main-content-text a:hover {
   color: #000;
   transition: 0.3s ease;
@@ -1286,6 +1325,17 @@ padding: 20px 0px;
   padding: 5px 5px;
   border: 1px solid #fff;
 }
+
+/* @media(max-width:776.99px) {
+  .cards-main-content-arrows img{
+    width: 20px;
+    height: 20px;
+  }
+  .cards-main-content-arrows {
+    padding: 2px 2px;
+    border: 1px solid #fff;
+  }
+} */
 
 .services {
   margin-bottom: 40px;
@@ -1471,9 +1521,9 @@ padding: 20px 0px;
   .offer {
     font-size: 30px;
   }
-  .cards-main-content-text a {
+  /* .cards-main-content-text a {
     font-size: 16px;
-  }
+  } */
   .cards-main-picture-btn {
     padding: 5px;
   }
@@ -1588,7 +1638,7 @@ padding: 20px 0px;
   }
   .cards-main-content-text a {
     margin-right: 0;
-    font-size: 14px;
+    font-size: 18px;
   }
   .footer-end-logo img {
     width: 60px;
